@@ -11,3 +11,7 @@ if image_PATH == None:
 	image_PATH = input("Drag image here: ").strip()
 
 
+im = Image.open(image_PATH)
+raw_data = list(im.getdata())
+
+print(raw_data[:5])
